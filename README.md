@@ -1,74 +1,105 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+<h1>Bank Nest API</h1>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+<p>Bank Nest API is a RESTful API for managing banking operations, including accounts, transactions, and customer information.</p>
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+<h2>Table of Contents</h2>
 
-## Description
+<ul>
+  <li><a href="#introduction">Introduction</a></li>
+  <li><a href="#features">Features</a></li>
+  <li><a href="#technologies">Technologies</a></li>
+  <li><a href="#installation">Installation</a></li>
+  <li><a href="#usage">Usage</a></li>
+  <li><a href="#api-endpoints">API Endpoints</a></li>
+  <li><a href="#contributing">Contributing</a></li>
+  <li><a href="#license">License</a></li>
+</ul>
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+<h2>Introduction</h2>
 
-## Installation
+<p>Bank Nest API is a backend application designed to provide banking functionalities through a RESTful API. It allows users to create and manage bank accounts, perform transactions, retrieve customer information, and more.</p>
 
-```bash
-$ npm install
-```
+<h2>Features</h2>
 
-## Running the app
+<ul>
+  <li>User authentication and authorization</li>
+  <li>Account creation, retrieval, and management</li>
+  <li>Transaction handling, including deposits, withdrawals, and transfers</li>
+  <li>Customer information management</li>
+</ul>
 
-```bash
-# development
-$ npm run start
+<h2>Technologies</h2>
 
-# watch mode
-$ npm run start:dev
+<ul>
+  <li><a href="https://nestjs.com">NestJS</a>: A progressive Node.js framework for building scalable and efficient server-side applications.</li>
+  <li><a href="https://www.typescriptlang.org">TypeScript</a>: A strongly typed superset of JavaScript that compiles to plain JavaScript.</li>
+  <li><a href="https://www.mongodb.com">MongoDB</a>: A NoSQL database for storing data.</li>
+  <li><a href="https://mongoosejs.com">Mongoose</a>: An Object Data Modeling (ODM) library for MongoDB and Node.js.</li>
+</ul>
 
-# production mode
-$ npm run start:prod
-```
+<h2>Installation</h2>
 
-## Test
+<ol>
+  <li>Clone the repository:</li>
+</ol>
 
-```bash
-# unit tests
-$ npm run test
+<pre><code>git clone https://github.com/BrenoMartinsBNMT/Bank-nest-API.git
+</code></pre>
 
-# e2e tests
-$ npm run test:e2e
+<ol start="2">
+  <li>Install the dependencies:</li>
+</ol>
 
-# test coverage
-$ npm run test:cov
-```
+<pre><code>cd Bank-nest-API
+npm install
+</code></pre>
 
-## Support
+<ol start="3">
+  <li>Set up the environment variables:</li>
+  <ul>
+    <li>Rename the <code>.env.example</code> file to <code>.env</code>.</li>
+    <li>Update the <code>.env</code> file with your specific configuration values.</li>
+  </ul>
+</ol>
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+<ol start="4">
+  <li>Start the application:</li>
+</ol>
 
-## Stay in touch
+<pre><code>npm start
+</code></pre>
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+<p>The application will be running at <code>http://localhost:3000</code>.</p>
 
-## License
+<h2>Usage</h2>
 
-Nest is [MIT licensed](LICENSE).
-# Bank-nest-API
+<p>Make sure the application is running locally or deployed to a server. You can use tools like <a href="https://www.postman.com">Postman</a> or <a href="https://curl.se">curl</a> to interact with the API endpoints.</p>
+
+<h2>API Endpoints</h2>
+
+<p>The API provides the following endpoints:</p>
+
+<ul>
+  <li><code>POST /auth/signup</code>: Create a new user account.</li>
+  <li><code>POST /auth/login</code>: Authenticate and obtain an access token.</li>
+  <li><code>GET /accounts</code>: Retrieve all bank accounts.</li>
+  <li><code>POST /accounts</code>: Create a new bank account.</li>
+  <li><code>GET /accounts/:accountId</code>: Retrieve a specific bank account.</li>
+  <li><code>PUT /accounts/:accountId</code>: Update a bank account.</li>
+  <li><code>DELETE /accounts/:accountId</code>: Delete a bank account.</li>
+  <li><code>POST /transactions/deposit</code>: Perform a deposit transaction.</li>
+  <li><code>POST /transactions/withdraw</code>: Perform a withdrawal transaction.</li>
+  <li><code>POST /transactions/transfer</code>: Perform a transfer transaction.</li>
+</ul>
+
+<p>For detailed information on request and response payloads for each endpoint, please refer to the API documentation.</p>
+
+<h2>Contributing</h2>
+
+<p>Contributions are welcome! If you find any issues or want to enhance the project, feel free to submit a pull request. Please make sure to follow the contributing guidelines outlined in the repository.</p>
+
+<h2>License</h2>
+
+<p>This project is licensed under the <a href="LICENSE">MIT License</a>.</p>
+
+<p>Feel free to use this template as a starting point and customize it according to your project's needs. Remember to keep your README up to date and provide clear instructions for users to use and contribute to your project.</p>
