@@ -79,18 +79,6 @@ npm install
 
 <p>The API provides the following endpoints:</p>
 
-<ul>
-  <li><code>POST /auth/signup</code>: Create a new user account.</li>
-  <li><code>POST /auth/login</code>: Authenticate and obtain an access token.</li>
-  <li><code>GET /accounts</code>: Retrieve all bank accounts.</li>
-  <li><code>POST /accounts</code>: Create a new bank account.</li>
-  <li><code>GET /accounts/:accountId</code>: Retrieve a specific bank account.</li>
-  <li><code>PUT /accounts/:accountId</code>: Update a bank account.</li>
-  <li><code>DELETE /accounts/:accountId</code>: Delete a bank account.</li>
-  <li><code>POST /transactions/deposit</code>: Perform a deposit transaction.</li>
-  <li><code>POST /transactions/withdraw</code>: Perform a withdrawal transaction.</li>
-  <li><code>POST /transactions/transfer</code>: Perform a transfer transaction.</li>
-</ul>
 
 <p>For detailed information on request and response payloads for each endpoint, please refer to the API documentation.</p>
 
